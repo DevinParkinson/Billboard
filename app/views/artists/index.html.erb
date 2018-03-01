@@ -1,2 +1,8 @@
-<h1>Artists#index</h1>
-<p>Find me in app/views/artists/index.html.erb</p>
+<h4>Browse the Artists</h4>
+<h1>
+<ul>
+  <% @artists.each do |artist| %>
+    <li><%= link_to 'artist.name', artist %></li>
+  <% end %>
+</ul></h1>
+<%= link_to 'Create a new Artist', new_artist_path %>
