@@ -1,5 +1,9 @@
 <h1><%= @chart.name %></h1>
 <hr />
+<ul>
+  <% @artists.each do |artist| %>
+  <% end %>
+</ul>
 <%= link_to 'View Artists', chart_artists_path(@chart) %>
 <br />
 <button class="silver btn-small"><%= link_to 'Edit Chart', edit_chart_path(@chart) %> </button>
