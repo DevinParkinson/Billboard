@@ -1,21 +1,19 @@
 <h1><%= @chart.name %></h1>
 <hr />
 
-<ul>
-  <% @artists.each do |artist| %>
-  <li>
+<h3>Artists:
+  <% @artists.each do |artist| %></h3>
+    <h5>
   <%= artist.name %>
   <% end %>
-</li>
-
-<ul>
+</h5>
+<h3>Songs:</h3>
+<h5>
   <% @songs.each do |song| %>
-  <li>
   <%= song.name %>
-</li>
+</h5>
   <% end %>
-</ul>
-<button class="silver btn-small"><%= link_to 'Add Song', new_chart_song_path(@chart) %></button>
+<button class="silver btn-small"><%= link_to 'View Songs', chart_songs_path(@chart) %></button>
 <button class="silver btn-small"><%= link_to 'View Artists', chart_artists_path(@chart) %></button>
 <button class="silver btn-small"><%= link_to 'Edit Chart', edit_chart_path(@chart) %> </button>
 <button class="silver btn-small"><%= link_to 'Delete Chart', @chart, method: :delete %> </button>

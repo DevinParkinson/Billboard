@@ -39,11 +39,11 @@ ActiveRecord::Schema.define(version: 20180302210703) do
 
   create_table "songs", force: :cascade do |t|
     t.string "name"
-    t.bigint "artist_id"
+    t.bigint "artists_id"
     t.bigint "chart_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["artist_id"], name: "index_songs_on_artist_id"
+    t.index ["artists_id"], name: "index_songs_on_artists_id"
     t.index ["chart_id"], name: "index_songs_on_chart_id"
   end
 
@@ -68,6 +68,6 @@ ActiveRecord::Schema.define(version: 20180302210703) do
 
   add_foreign_key "accounts", "users"
   add_foreign_key "artists", "charts"
-  add_foreign_key "songs", "artists"
+  add_foreign_key "songs", "artists", column: "artists_id"
   add_foreign_key "songs", "charts"
 end

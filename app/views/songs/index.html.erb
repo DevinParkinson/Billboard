@@ -5,4 +5,5 @@
     <li> <%= link_to song.name, [song.chart, song] %></li>
   <% end %>
 </ul></h3>
-<h3><%= link_to 'Create a new Song', new_chart_song_path(@chart) %></h3>
+<button class="silver btn-small"><%= link_to 'Create a new Song', new_chart_song_path(@chart) %></button>
+<button class="silver btn-small"><%= link_to 'Back', chart_path(@chart) %></button>
