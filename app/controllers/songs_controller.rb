@@ -20,6 +20,6 @@ class SongsController < ApplicationController
     end
 
     def song_params
-      params.require(:comment).permit(:body)
+      params.require(:song).permit(:name)
     end
 end

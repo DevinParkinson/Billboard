@@ -3,3 +3,9 @@
 <button class="silver btn-small"><%= link_to 'Edit', edit_chart_artist_path([@chart, @artist])%></button>
 <button class="silver btn-small"><%= link_to 'Delete', [@chart, @artist], method: :delete%></button>
 <button class="silver btn-small"><%= link_to 'Back', chart_artists_path(@chart)%></button> </div>
+<h2>Songs</h2>
+
+<% @artist.songs.each do |song| %>
+  <%= render 'songs/song', { song: song } %>
+<% end %>
+<%= link_to 'Add Song', new_artist_song_path(@artist) %>

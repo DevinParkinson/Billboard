@@ -1,7 +1,7 @@
 <h1>Add A Song</h1>
 <%= form_for [@artist, @song] do |f| %>
-  <%= f.label :body %>
-  <%= f.text_area :body, required: true %>
+  <%= f.label :name %>
+  <%= f.text_area :name, required: true %>
   <br />
   <%= f.submit %>
 <% end %>
