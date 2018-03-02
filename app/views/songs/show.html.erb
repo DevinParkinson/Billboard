@@ -1,0 +1,7 @@
+<h3><%= @song.name %></h3>
+
+<div class= right>
+  <button class="silver btn-small"><%= link_to 'Edit', edit_chart_song_path([@chart, @song])%></button>
+  <button class="silver btn-small"><%= link_to 'Delete', [@chart, @song], method: :delete%></button>
+  <button class="silver btn-small"><%= link_to 'Back', chart_songs_path(@chart)%></button>
+</div>

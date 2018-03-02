@@ -1,0 +1,8 @@
+<h2>Browse Songs</h2>
+<h3>
+<ul>
+  <% @songs.each do |song| %>
+    <li> <%= link_to song.name, [song.chart, song] %></li>
+  <% end %>
+</ul></h3>
+<h3><%= link_to 'Create a new Song', new_chart_song_path(@chart) %></h3>

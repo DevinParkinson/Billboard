@@ -6,7 +6,8 @@ class ChartsController < ApplicationController
   end
 
   def show
-    @artists = @chart.songs.map { |s| s.artist.name }.uniq
+    @songs = @chart.songs.all
+    @artists = @chart.artists.all
   end
 
   def new
