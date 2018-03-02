@@ -17,6 +17,10 @@ class SongsController < ApplicationController
 
   private
 
+    def set_chart
+     @chart = Chart.find(params[:chart_id])
+    end
+
     def set_artist
       @artist = Artist.find(params[:artist_id])
     end
