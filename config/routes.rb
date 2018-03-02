@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :charts do
     resources :artists
+    resources :songs
   end
 
   scope 'artsits/:artist_id', as: 'artist' do
