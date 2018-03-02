@@ -5,4 +5,5 @@
     <li> <%= link_to artist.name, [artist.chart, artist] %></li>
   <% end %>
 </ul></h3>
-<h3><%= link_to 'Create a new Artist', new_chart_artist_path(@chart) %></h3>
+<button class="silver btn-small"><%= link_to 'Create a new Artist', new_chart_artist_path(@chart) %></button>
+<button class="silver btn-small"><%= link_to 'Back', chart_path(@chart) %></button>

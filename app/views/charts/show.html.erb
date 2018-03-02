@@ -11,9 +11,13 @@
 <h5>
   <% @songs.each do |song| %>
   <%= song.name %>
-</h5>
+  <br  />
   <% end %>
+</h5>
 <button class="silver btn-small"><%= link_to 'View Songs', chart_songs_path(@chart) %></button>
 <button class="silver btn-small"><%= link_to 'View Artists', chart_artists_path(@chart) %></button>
 <button class="silver btn-small"><%= link_to 'Edit Chart', edit_chart_path(@chart) %> </button>
 <button class="silver btn-small"><%= link_to 'Delete Chart', @chart, method: :delete %> </button>
+<br  />
+<br />
+<button class="silver btn-small"><%= link_to 'Back', charts_path %></button>
