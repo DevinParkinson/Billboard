@@ -2,7 +2,7 @@
 <h1>
 <ul>
   <% @artists.each do |artist| %>
-    <li><%= link_to 'artist.name', artist %></li>
+    <li><%= link_to artist.name, [artist.chart, artist] %></li>
   <% end %>
 </ul></h1>
 <button class="silver btn-small"><%= link_to 'Create a new Artist', new_artist_path %></button>
