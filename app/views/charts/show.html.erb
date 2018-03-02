@@ -1,16 +1,17 @@
 <h1><%= @chart.name %></h1>
 <hr />
 
-<h3>Artists:
-  <% @artists.each do |artist| %></h3>
-    <h5>
-  <%= artist.name %>
+<h3>Artists:</h3>
+<h5><% @artists.each_with_index do |artist, index| %>
+  <span><h5> <%= index + 1%>)
+  <%= artist.name %></h5></span>
+
   <% end %>
 </h5>
 <h3>Songs:</h3>
-<h5>
-  <% @songs.each do |song| %>
-  <%= song.name %>
+<h5><% @songs.each_with_index do |song, index| %>
+  <span><h5> <%= index + 1%>)
+  <%= song.name %></h5></span>
   <br  />
   <% end %>
 </h5>
