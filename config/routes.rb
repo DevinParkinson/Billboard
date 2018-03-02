@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   resources :charts do
     resources :artists
   end
+
+  scope 'artsits/:artist_id', as: 'artist' do
+    resources :songs, only: [:new, :create]
+  end
 end
