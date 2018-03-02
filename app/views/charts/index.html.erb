@@ -1,7 +1,7 @@
 <h4>Let's check out the Charts</h4>
 <h2><ul>
   <% @charts.each do |chart| %>
-    <li class="center"><%= link_to "#{chart.name}", chart %></li>
-  <% end %>
+    <li class="center black-text"><%= link_to "#{chart.name}", chart %></li>
+		<% end %>
 </ul></h2>
-<%= link_to 'Create a new Chart', new_chart_path %>
+<button class="silver btn-small"><%= link_to 'Create a new Chart', new_chart_path %> </button>
