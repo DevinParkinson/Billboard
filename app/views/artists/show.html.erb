@@ -1,6 +1,5 @@
-<h1><%= @chart.name %> - <%= @artist.name %></h1>
-<hr  />
-<%= link_to 'Edit Artist', edit_chart_artist_path([@chart, @artist])%>
-<%= link_to 'Delete Artist', [@chart, @artist], method: :delete%>
-<hr  />
-<%= link_to 'Back To Artists', chart_artists_path(@chart)%>
+<h1><%= @artist.name %></h1>
+<div class= right>
+<button class="silver btn-small"><%= link_to 'Edit', edit_chart_artist_path([@chart, @artist])%></button>
+<button class="silver btn-small"><%= link_to 'Delete', [@chart, @artist], method: :delete%></button>
+<button class="silver btn-small"><%= link_to 'Back', chart_artists_path(@chart)%></button> </div>

@@ -19,7 +19,7 @@ class ArtistsController < ApplicationController
   def create
     @artist = @chart.artists.new(artist_params)
     if @artist.save
-      redirect_to [@chart, @song]
+      redirect_to [@chart, @artist]
     else
       render :new
     end
@@ -27,7 +27,7 @@ class ArtistsController < ApplicationController
 
   def update
     if @artist.update(artist_params)
-      redirect_to [@chart, @song]
+      redirect_to [@chart, @artist]
     else
       render :edit
     end
