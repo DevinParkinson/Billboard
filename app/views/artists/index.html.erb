@@ -1,8 +1,8 @@
-<h4>Browse the Artists</h4>
-<h5>
+<h2>Browse Artists</h2>
+<h3>
 <ul>
   <% @artists.each do |artist| %>
     <li> <%= link_to artist.name, [artist.chart, artist] %></li>
   <% end %>
-</ul></h5>
-<button class="silver btn-small"><%= link_to 'Create a new Artist', new_chart_artist_path(@chart) %></button>
+</ul></h3>
+<h3><%= link_to 'Create a new Artist', new_chart_artist_path(@chart) %></h3>

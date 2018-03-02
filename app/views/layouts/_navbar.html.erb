@@ -1,4 +1,4 @@
-<nav class="blue accent-1">
+<nav class="black accent-1">
   <div class="nav-wrapper">
     <a href="/" class="brand-logo">Top Charts</a>
     <a
@@ -8,11 +8,16 @@
     >
       <i class="material-icons">Top Charts</i>
     </a>
-    <p class = right>
-      <%= link_to 'Home', root_path %>
 
+    <p class = right>
+      <h4 class= "right">
+      <i class="material-icons home right">
+      <%= link_to 'Home', root_path %>
+      </i></h4>
     </p>
     <audio src="audio/creep.mp3" autoplay loop/>
-
+      <div class="center">
+    <%= image_tag("Billboard-white.png", :alt => "Billboard logo") %>
+    </div>
   </div>
 </nav>
