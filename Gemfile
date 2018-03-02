@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'faker'
 gem 'materialize-sass'
+gem 'devise'
 
 group :development, :test do
   gem 'pry'
