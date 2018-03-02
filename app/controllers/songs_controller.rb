@@ -1,6 +1,6 @@
 class SongsController < ApplicationController
   before_action :set_artist
-  before_action :set_chart
+
 
   def new
     @song = Song.new

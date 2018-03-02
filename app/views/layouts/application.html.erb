@@ -2,15 +2,19 @@
 <html>
   <head>
     <title>Billboard</title>
-    <%= csrf_meta_tags %>
+
+
+  <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application' %>
     <%= javascript_include_tag 'application' %>
   </head>
-
+  
   <body class="grey lighten-4">
+
       <%= render 'layouts/navbar' %>
     <%= yield %>
+
     </div>
   </body>
 </html>

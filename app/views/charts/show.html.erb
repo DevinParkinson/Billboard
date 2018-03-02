@@ -4,7 +4,6 @@
   <% @artists.each do |artist| %>
   <% end %>
 </ul>
-<%= link_to 'View Artists', chart_artists_path(@chart) %>
-<br />
+<button class="silver btn-small"><%= link_to 'View Artists', chart_artists_path(@chart) %></button>
 <button class="silver btn-small"><%= link_to 'Edit Chart', edit_chart_path(@chart) %> </button>
 <button class="silver btn-small"><%= link_to 'Delete Chart', @chart, method: :delete %> </button>
